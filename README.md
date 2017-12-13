@@ -1,4 +1,6 @@
-# Sample
+# Sample Angular 5 Application
+
+This is a sample Angular application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
