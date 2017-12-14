@@ -7,11 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-   @Input() cartCount: number;
+  @Input() cartCount: number;
 
-  constructor() {
-    this.cartCount = 0;
-   }
+  constructor() {}
 
   ngOnInit() {
   }
