@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+
+  @Output() addToCartEvent = new EventEmitter<number>();
 
   public addToCartCount: number;
 
@@ -18,6 +20,7 @@ export class ProductComponent implements OnInit {
 
   public addToCart() {
     ++this.addToCartCount;
+    this.addToCartEvent.emit(this.addToCartCount);
   }
 
 }

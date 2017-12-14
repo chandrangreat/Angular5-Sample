@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  cartCount: number;
+  constructor() {
+    this.cartCount = 0;
+  }
+  onAddToCart(cartCount: number) {
+    console.log(cartCount);
+    this.cartCount = cartCount;
+  }
 }
